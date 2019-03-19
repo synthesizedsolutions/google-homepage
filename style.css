@@ -1,3 +1,18 @@
+
+131 lines (118 sloc) 1.89 KB
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/*Adjust the width and height to fit entire page*/
+.main-container {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+/* Navbar css*/
 .navbar {
 	margin: 1em;
 	padding-right: 1em;
@@ -24,21 +39,95 @@ a {
 	font-size: 13px;
 	opacity: 0.75;
 }
-.google-apps {
-	height: 30px;
-    width: 30px;
-    vertical-align: middle;
-    background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
-    background-size: 528px 68px;
-    background-position: -132px -38px;
-    display: inline-block;
-}
-li button {
-    color: #FFF;
-    background-color: #4285f4;
-    border: 1px solid #4285f4;
-    display: inline-block;
-    line-height: 28px;
-    padding: 0 12px;
 
+a:hover {
+	text-decoration: underline;
+}
+
+.google-apps {
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+
+.google-apps:hover {
+	filter: brightness(0%);
+}
+
+li button {
+	color: #fff;
+	background-color: #4285f4;
+	border: 1px solid #4285f4;
+	font-weight: bold;
+	border-radius: 2px;
+	line-height: 28px;
+	padding: 0px 12px;
+}
+
+/* Google logo css */
+.logo-container {
+	margin-top: 10em;
+	text-align: center;
+}
+/* Search bar css */
+.search-bar-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
+}
+
+.search-bar-outer {
+	width: 584px;
+	height: 44px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 2px 3px #ddd;
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+}
+
+.search-bar-inner {
+	outline: none;
+	border: none;
+	width: 530px;
+	margin-left: 10px;
+}
+
+.google-mic > img {
+	width: 24px;
+	height: 24px;
+	margin-top: 4px;
+}
+/* Search buttons css*/
+.buttons-container {
+	margin-top: 1.5em;
+	text-align: center;
+}
+
+.buttons-container > button {
+	height: 36px;
+  background-color: #eee;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  color: #757575;
+  cursor: pointer;
+  font-family: arial,sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 11px 4px;
+  padding: 0 16px;
+  text-align: center;
+}
+/* Footer css*/
+.footer {
+	font-size: 13px;
+	opacity: 0.75;
+	color: #757575;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #eee;
+	line-height: 40px;
+	padding: 0em 1em;
 }
